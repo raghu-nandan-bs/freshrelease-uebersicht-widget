@@ -42,7 +42,7 @@ export const className = `
 export const refreshFrequency = 3600*1000;
 
 // could have used fetch, but the platform automatically adds Useragent and other info, due to which server refuses to return proper response. cURL is way simpler.
-export const command =`curl -sS 'https://`+FRESHRELEASE_URL+`/issues?owner_id=`+OWNER_ID+`&sort_type=desc' --header 'authorization: Token `+API_KEY+`' --header 'content-type: application/json'`;
+export const command =`curl -sS 'https://`+FRESHRELEASE_URL+`/issues?owner_id=`+OWNER_ID+`&resolved=false&sort_type=desc' --header 'authorization: Token `+API_KEY+`' --header 'content-type: application/json'`;
 
 export const render =  command => {
     

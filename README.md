@@ -1,6 +1,9 @@
 # freshrelease-uebersicht-widget
 An Uebersicht widget to display your tasks on screen
 
+* refreshes every hour.
+* displays only unresolved issues
+
 ## Customize
 
 update following variables in `jsx` file
