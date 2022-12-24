@@ -1,5 +1,7 @@
 # freshrelease-uebersicht-widget
-An Uebersicht widget to display your tasks on screen
+
+
+An [Uebersicht](https://tracesof.net/uebersicht/) widget to display your tasks on screen
 
 * refreshes every hour.
 * displays only unresolved issues
