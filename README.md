@@ -6,6 +6,17 @@ An [Uebersicht](https://tracesof.net/uebersicht/) widget to display your tasks o
 * refreshes every hour.
 * displays only unresolved issues
 
+## Install
+
+```bash
+wget https://github.com/raghu-nandan-bs/freshrelease-uebersicht-widget/archive/refs/heads/main.zip
+cd ${HOME}/Downloads/ && \
+wget https://github.com/raghu-nandan-bs/freshrelease-uebersicht-widget/archive/refs/heads/main.zip -O freshrelease-uebersicht-widget-main.zip && \
+    unzip freshrelease-uebersicht-widget-main.zip && \
+    cp -r freshrelease-uebersicht-widget-main ${HOME}/Library/Application\ Support/Übersicht/widgets
+
+```
+
 ## Customize
 
 update following variables in `jsx` file
