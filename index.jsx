@@ -48,7 +48,12 @@ export const render =  command => {
     
     const data = command?.output && JSON.parse(command.output);
     let tickets = []
-    
+    if ( ! data ) {
+        return ( 
+             <fieldset>
+             </fieldset>
+         )
+    }
     data["issues"].forEach(element => {
         // assumes ticket-ID = [project-ID]-[ticket-number]
         let ticket_url = "https://"+FRESHRELEASE_URL+"/ws/"+element["key"].split("-")[0]+"/tasks/"+element["key"]
